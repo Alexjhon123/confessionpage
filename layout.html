@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONFESSION PAGE</title>
+    <style>
+        div {
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid rgb(165, 10, 236);
+            padding: 10px;
+            
+        }
+        /* Define the animation */
+        @keyframes flowing-border {
+            0% {
+                border-color: #ff0000; /* red */
+            }
+            50% {
+                border-color: #00ff00; /* green */
+            }
+            100% {
+                border-color: #0000ff; /* blue */
+            }
+        }
+
+        /* Apply the animation to the button on hover */
+        div:hover {
+            animation: flowing-border 2s ease-in-out infinite;
+        }
+        button:hover {
+            animation: flowing-border 2s ease-in-out infinite;
+        }
+
+
+    </style>
+</head>
+<body>
+    {% block body %}{% endblock %}    
+</body>
+</html>
+
+

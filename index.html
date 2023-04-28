@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div>
+    <form action="/submitconf" method="post">
+        <input name="name" type="text" placeholder="Name" autofocus autocomplete="off">
+        <input name="confession" type="text" placeholder="CONFESSION" autofocus autocomplete="off">
+        <input type="submit">
+    </form>
+    <form action="/viewconf" method="get">
+
+        <button type="submit" value="VIEW">VIEW CONFESSIONS</button>
+    </form>
+        
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <div>
+        <ul>
+            {% for i in conf_essions %}
+            <li>{{conf_essions[i]}}</li>
+            {% endfor %}
+            <a href="/">home</a>
+        </ul>
+    </div>
+{% endblock %}
